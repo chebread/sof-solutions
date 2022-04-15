@@ -8,21 +8,6 @@
 </head>
 <body>
   <div id="root"></div>
-  <script>
-    const root = document.querySelector('#root');
-    const array = [["item1", "item2", "item3"],["item4" , "item5", "item6"]];
-                                                
-    for (let i = 0;i < array.length;i++) {
-      const elem = document.createElement('tr');
-      elem.innerHTML = `
-        <tr>
-          <td>${array[i][0]}</td>
-          <td>${array[i][1]}</td>
-          <td>${array[i][2]}</td>
-        </tr>
-      `;
-        root.appendChild(elem)
-    }   
-  </script>
+  <script src="./app.js"></script>
 </body>
 </html>
