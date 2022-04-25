@@ -1,8 +1,10 @@
 // empty
 for (let i = 0; i < 13; i++) {
   let month = new Date().getMonth() + 1 + i;
+  let year = new Date().getFullYear();
   if (month > 12) {
     month = month - 12;
+    year = year + 1;
   }
   const nameMonth = {
     1: "Jan",
@@ -18,7 +20,5 @@ for (let i = 0; i < 13; i++) {
     11: "Nov",
     12: "Dec",
   };
-  console.log(
-    new Date().getFullYear() + " Year " + nameMonth[month] + " Month "
-  );
+  console.log(year + " Year " + nameMonth[month] + " Month ");
 }
